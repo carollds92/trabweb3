@@ -1,0 +1,408 @@
+
+
+    body{
+        font-family: Graphik,'Gotham SSm A','Gotham SSm B','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+        font-size: 18px; 
+        font-style: bold;
+        display: block; 
+        margin: 0%;
+    }
+    
+    /*ESTILO DE BOTÕES*/
+    .nu{
+        display: inline; 
+    }
+    .log{
+        display: inline; 
+    }
+    .nu2{
+        padding-left: 80px;
+        display: inline; 
+    }
+    
+    a.barra:link, a.barra:visited{
+        background-color: white; 
+        color: grey; 
+        padding: 14px 14px; 
+        text-align: center; 
+        text-decoration: none;
+    }
+    a.barra:hover, a.barra:active{
+        background-color: white; 
+        color: blueviolet;
+    }
+    
+    a.botao:link, a.botao:visited{
+        background-color: darkviolet; 
+        color: white; 
+        padding: 26px 30px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block;
+    }
+    a.botao:hover, a.botao:active{
+        background-color: mediumorchid; 
+    }
+    a.login:link, a.login:visited{
+        background-color:white; 
+        color:darkviolet ; 
+        padding: 26px 30px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block;
+    }
+    a.login:hover, a.login:active{
+        background-color: white; 
+    }
+    
+    a.news:link, a.news:visited{
+        background-color:white; 
+        color:darkviolet ; 
+        padding: 18px 26px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block;
+    }
+    a.news:hover, a.news:active{
+        background-color: white; 
+    }
+    
+    /*ESTILO BARRA DE NAVEGAÇÃO*/
+    .barraNav{
+        background-color: white;
+        position: fixed; 
+        display: inline; 
+        color: grey;
+        border-bottom: 1px solid lightgray;
+        width: 100%; 
+        padding: 19px; 
+        top: 0%; 
+    }
+    
+    .barraLog{
+        display: inline; 
+        position: fixed;
+        right: 0%;
+        top: 0%; 
+    }
+    
+    /*ESTILO DAS DIVS*/
+    .first{
+        position: relative; 
+        top: 60px; 
+        background-image: url('../images/woman-bus.jpg');
+        background-repeat: no-repeat; 
+        background-attachment: scroll;  
+        background-size: 100%;
+        width: 90%;
+        left: 4%;
+        height: 90%;
+        padding: 150px 0px 0px 0px;
+        background-clip: border-box; 
+        background-position: center; 
+        text-decoration-color: aliceblue;
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    
+    .second{
+        position: relative; 
+        top: 100px; 
+        background-color: rgba(245, 245, 245);
+        margin-top: 100px;
+        padding: 0px 0px 0px 0px;;
+        width: auto;
+        height: 110%;
+        background-clip: border-box; 
+        background-position: center; 
+        text-decoration-color: aliceblue;
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    
+    .thirt{
+        position: relative; 
+        top: 6em; 
+        padding: 10px;
+        width: auto;
+        height: 100%;
+        background-clip: border-box; 
+        background-position: center; 
+        text-decoration-color: aliceblue;
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    
+    .fourth{
+        position: relative; 
+        top: 6em; 
+        padding: 10px;
+        width: auto;
+        height: 100%;
+        background-color: rgba(67, 0, 121, 0.918);  
+        background-clip: border-box; 
+        background-position: center; 
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    
+    .fifth{
+        position: relative; 
+        top: 6em; 
+        padding: 10px;
+        height: 85%;
+        width: auto;
+        background-size: 100%;
+        background-image: url("../images/challenge-system-large.jpg");
+        background-clip: border-box; 
+        background-position: center; 
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    
+    .sixth{
+        position: relative; 
+        top: 6em; 
+        padding: 50px;
+        height: 75%;
+        width: auto;
+        background-size: 100%;
+        background-image: url("../images/nucommunity.jpg");
+        background-clip: border-box; 
+        background-position: center; 
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    .seventh{
+        position: relative; 
+        top: 6em; 
+        padding: 10px;
+        width: auto;
+        height: 90%;
+        background-color: darkviolet;  
+        background-clip: border-box; 
+        background-position: center; 
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    .eighth{
+        position: relative; 
+        top: 6em; 
+        padding: 10px;
+        width: auto;
+        height: auto;
+        background-color: rgba(25, 25, 25);  
+        background-clip: border-box; 
+        background-position: center; 
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    .prod, .nubank, .explore, .pelo_mundo, .sac, .ouvidoria, .legal, .app, .conheca{
+        display: inline-block; 
+        height: auto;
+        width: auto; 
+        right: 0%;
+        vertical-align: text-top;
+    }
+    .enquad{
+        padding: 50px 0px 30px 300px;
+    }
+    .ninth{
+        position: relative; 
+        top: 6em; 
+        padding: 50px 0px 50px 1020px;
+        width: auto;
+        height: auto;
+        border-top: 1px solid lightgray;
+        background-color: rgba(25, 25, 25);  
+        background-clip: border-box; 
+        background-position: center; 
+        word-break: break-all;
+        text-align: justify; 
+        image-orientation: 0turn;
+        z-index: -1;
+    }
+    
+    /*ESTILO DAS IMAGENS*/
+    img.barraimg{
+        display: inline;
+    }
+    img.Ifirst{
+        padding-top: 5em;
+        right: 10%;
+        position: absolute; 
+    }
+    img.Isecond{
+        padding-top: 4em;
+        right: 10%;
+        position: absolute; 
+    }
+    img.Ithirt{
+        padding-top: 3em;
+        bottom: 0%;
+        right: 10%;
+        width: 19%;
+        position: absolute; 
+    }
+    img.Ifourth{
+        padding-top: 4em;
+        right: 10%;
+        width: 28%;
+        position: absolute; 
+    }
+    img.Ififth{
+        padding-top: 4em;
+        right: 10%;
+        width: 28%;
+        position: absolute; 
+    }
+    img.Iseventh{
+        right: 0%;
+        width: 37%;
+        bottom: 0%;
+        position: absolute; 
+    }
+    img.Ieighth{
+        padding-top: 4em;
+        padding-left: 4em;
+        width: auto;
+        position: absolute; 
+    }
+    
+    /* ESTILO DE TEXTOS*/
+    p.entrada{
+        word-break: keep-all;
+        color: white;
+        font-size: 48px;
+        text-align: left;
+        width: 400px;
+        padding: 100px 0px 0px 80px; 
+    }
+    p.sub{
+        word-break: keep-all;
+        color: white;
+        font-size: 20px;
+        text-align: left;
+        width: 300px;
+        padding-top: 0%;
+        padding-left: 80px;
+    }
+    h2{
+        color: white;
+        font-size: 48px;
+    
+    }
+    p.txt1{
+        color: rgba(118, 118, 118);
+        font-size: 50px;
+        word-break: keep-all;
+        text-align: left;
+        width: 500px;
+        padding-top: 1em;
+        padding-left: 80px; 
+    }
+    
+    a.txt2{
+        color:rgb(138, 5, 190); 
+        font-size: 18px;
+        word-break: keep-all;
+        text-align: left;
+        width: 400px;
+        padding-left: 80px; 
+    }
+    p.txt3{
+        color: rgba(252, 227, 255, 0.5);
+        font-size: 48px;
+        word-break: keep-all;
+        text-align: left;
+        width: 500px;
+        padding-top: 2em;
+        padding-left: 80px; 
+    }
+    a.txt4{
+        color:white; 
+        font-size: 18px;
+        word-break: keep-all;
+        text-align: left;
+        width: 400px;
+        padding-left: 80px; 
+    }
+    p.txt5{
+        color: white;
+        font-size: 48px;
+        word-break: keep-all;
+        text-align: left;
+        width: 500px;
+        padding-top: 5%;
+        padding-left: 80px; 
+    }
+    a.tit{
+        color: mediumorchid;
+        font-size: 18px;
+        word-break: keep-all;
+        text-align: left;
+        /*padding-left: 10em; */
+        display: block; 
+    }
+    a.txt6{
+        color:white; 
+        font-size: 18px;
+        word-break: keep-all;
+        text-align: left;
+        display: block;
+    }
+    a.txt7{
+        right: 0%;
+        color:white; 
+        font-size: 18px;
+        word-break: keep-all;
+        text-align: left;
+        display: inline;
+    }
+    
+    /*ESTILO DA SELEÇÃO DE IDIOMA
+    .ninth input[type=radio]{
+        display:none;
+    }
+    .ninth input[type="radio"]{
+        border: 1px solid rgb(255, 255, 255);
+        content: "\00a0";
+        display: inline-block;
+        height: 16px;
+        margin: 0 .25em 0 0;
+        padding:0;
+        vertical-align: top;
+        width: 16px;
+        border-radius:4px;
+    }
+     
+    .ninth input[type="radio"]:checked {
+        background: plum;
+        color: rgba(25, 25, 25);
+        content: "\2713";
+        text-align: center;
+    }
+     
+    .ninth input[type="radio"]:checked{
+        font-weight: bold;
+    }*/
+   
+    
+    
+    

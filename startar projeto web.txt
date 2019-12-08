@@ -1,0 +1,13 @@
+PASSOS PARA EXECUTAR/ STARTAR 
+
+1 - prompt na pasta c:\mongo\bin\ e digitar "mongod --dbpath c:\node\trabweb2\data\" - deixar rodando esse prompt 
+
+2 - prompt na pasta c:\mongo\bin\ e digitar "mongo" - deixar rodando, ele eh a parte de consulta do banco 
+
+3 - prompt na pasta c:\node\trabweb2\ e digitar "npm start". logo após, abrir http://localhost.com/3000
+
+
+pasta app da sophia 
+
+C:/node/exajax/node_modules/jquery/dist/jquery.js
+C:/node/exajax/node_modules/jquery-validation/dist/jquery.validate.js

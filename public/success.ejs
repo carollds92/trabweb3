@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "stylesheets/style4.css"/>
+    <meta http-equiv = "content-type" content = "text/html;charset-utf-8"/>
+    <title> Nubank - Finalmente você no controle do seu dinheiro </title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<div class="img">
+		<img src= "images/icon_beach.png"> 
+	</div>
+  <div class="enunciado">
+    <p class="tit">Pronto! Agora é só checar seu email.</p>
+  </div>
+  <div class="text">
+    <p>
+     Em poucos minutos, você receberá mais informações no e-mail 
+     <% userlist.forEach(function(user){ %>
+         <br><%= user.useremail %></br>
+     <%})%>
+      </p>
+    </div>
+
+
+</body>
+</html>

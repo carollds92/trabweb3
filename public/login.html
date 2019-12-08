@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style3.css"/> 
+    <meta http-equiv = "content-type" content = "text/html;charset-utf-8"/>
+    <title>Login - Nubank</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div class="logo"> 
+	<img class="logo" src= "images/white.svg">  
+</div>
+
+<div class="box"> 
+
+	<div class="tit"> Faça seu login</div>
+
+	<div class="boxlabel">
+		<form action="..routes/index.ejs/'adduser'" method="post">
+			<label for="cpf">CPF</label>
+			</br><input type"varchar" id="cpf" required/>
+			</br><label class="txt" for="pass">Senha</label>
+			</br><input type="password" id="pass" minlength="8" required/>
+		</form>
+	</div>
+
+	<div class="buttonsummit">
+		<a class="botao" href = "userlist.ejs" target="_blank"> Continuar </a>
+	</div>
+
+	<a class="senha" href="default.asp" target="_blank">Esqueci minha senha > </a>
+</div>
+
+</body>
+</html>

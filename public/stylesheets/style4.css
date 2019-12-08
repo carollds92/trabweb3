@@ -1,0 +1,27 @@
+body{
+	background-color: white;
+	font-family: Graphik,'Gotham SSm A','Gotham SSm B','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    font-size: 18px; 
+    font-style: bold;
+    display: block; 
+    margin: 10%;
+	
+}
+
+p.tit{
+	font-size: 32px;
+    max-width: 26rem;
+    line-height: 1.25em;
+    color: rgb(138, 5, 190);
+    margin-bottom: 32px;
+}
+
+.text{
+	color: rgb(177, 173, 183);
+}
+
+img.img{
+	padding-top: 10em;
+    left: 10em;
+    position: absolute; 
+}

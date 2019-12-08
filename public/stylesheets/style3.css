@@ -1,0 +1,87 @@
+body{
+	background-color: #81259D;
+    display: block; 
+    margin: 0%;
+}
+
+.logo{
+	display:inline;
+	position:block;
+}
+
+img.logo{
+	margin: 2em; 
+	max-width:80px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+}
+
+.box{
+	background-color: white; 
+	box-sizing: border-box;
+	border-radius: .5rem;
+	position: absolute;
+	max-width: 28rem; 
+	width: 100%;
+	height: 90%;
+	padding: 100px 100px 100px 100px; 
+	margin: 5%;
+	left: 30%;
+	word-break: break-all;
+	z-index: 2;
+	display: inline;
+}
+
+.tit{
+	font-family: ff-dax-web-pro,"Helvetica Neue",sans-serif;
+    font-size: 18px; 
+    font-weight: bold;
+	font-color: #222; 
+	text-align: center;
+    line-height: 2em;
+
+}
+
+.boxlabel{
+	padding: 2rem; 
+	color: rgb(177, 173, 183);
+	position: center;
+}
+
+label.txt{
+	text-align: justify; 
+}
+
+a.botao:link, a.botao:visited{
+	width:200px;
+	height:20px;
+	border-width:3px;
+	border-style:solid;
+	border-color: #81259D;
+	border-radius:.5em;
+	background-color: white; 
+	color: #81259D; 
+	font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",sans-serif;
+	padding: 26px 30px; 
+	text-align: center; 
+	text-decoration: none; 
+	display: inline-block;
+}
+a.botao:hover, a.botao:active{
+	background-color: white; 
+}
+
+a.senha:link, a.senha:visited{
+	color:rgb(138, 5, 190); 
+	position: center; 
+	text-align: center;
+	width: 100%;
+	font-size: .9rem;
+    font-weight: 600;
+    font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",sans-serif;
+}
+a.senha:hover, a.senha:active{
+	color: rgb(1, 1, 1);
+}
+

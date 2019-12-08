@@ -1,0 +1,12 @@
+1 - o arquivo app.js é onde se define as bibliotecas do javascript e as rotas da aplicação. ele fica na raiz do diretório
+2 - o arquivo db.js será responsável pela conexão e estrutura do banco, usando o ORM mongoose. 
+2.1 - a sintaxe é: 
+db.<nome da tabela>.insert
+
+
+3 - na pasta public é a raiz do localhost:3000, onde as paginas irão ser apresentadas
+4- db.js nos mostra qual banco de dados esta sendo usado.
+5 - userlist arquivo teste do banco 
+
+
+
