@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+console.log(process.env);
 mongoose.connect('mongodb+srv://carol:' + process.env.SENHABD + '@cluster0-lcz3x.mongodb.net/baseteste?retryWrites=true&w=majority');
 
 var userSchema = new mongoose.Schema({
