@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
-  <body>
-    <h1 class="text-center title-1"> Lista de Usu&aacute;rios </h1>
-    <ul>
-      <% userlist.forEach(function(user){ %>
-      <li>
-        <a href="mailto:"
-          <%= user.email %>"><%= user.username %>
-        </a>
-      </li>
-      <%})%></ul>
-  </body>
+
+<head></head>
+
+<body>
+  <h1 class="text-center title-1"> Lista de Usu&aacute;rios </h1>
+  <ul>
+    <% userlist.forEach(function(user){ %>
+    <li>
+      <a href="mailto:" <%= user.email %>"><%= user.email %>
+      </a>
+    </li>
+    <%})%></ul>
+  <a href="./users/logout">Logout</a>
+</body>
+
 </html>

@@ -53,7 +53,7 @@ label.txt{
 	text-align: justify; 
 }
 
-a.botao:link, a.botao:visited{
+button{
 	width:200px;
 	height:20px;
 	border-width:3px;
@@ -67,20 +67,9 @@ a.botao:link, a.botao:visited{
 	text-align: center; 
 	text-decoration: none; 
 	display: inline-block;
-}
-a.botao:hover, a.botao:active{
-	background-color: white; 
+	cursor: pointer;
 }
 
-a.senha:link, a.senha:visited{
-	color:rgb(138, 5, 190); 
-	position: center; 
-	text-align: center;
-	width: 100%;
-	font-size: .9rem;
-    font-weight: 600;
-    font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",sans-serif;
-}
 a.senha:hover, a.senha:active{
 	color: rgb(1, 1, 1);
 }

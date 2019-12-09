@@ -5,7 +5,7 @@ body{
     font-style: bold;
     display: block; 
     margin: 0%;
-	
+    padding: 25px;
 }
 
 p.tit{
@@ -41,6 +41,18 @@ p.tit{
 
 }
 
+button {
+    width:200px;
+	height:20px;
+	background-color: #81259D; 
+	color:white; 
+	font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",sans-serif;
+	padding: 26px 30px; 
+	text-align: center; 
+	text-decoration: none; 
+	display: inline-block;
+}
+
 
 a.politica{
 	position: relative;
@@ -55,7 +67,7 @@ a.politica{
     background-position: 0px 100%, 100% 100%;
     transition: background-size 0.2s ease-in-out 0s;
 }
-/* parte da validação do formulario*/
+/* parte da validaï¿½ï¿½o do formulario*/
     .error{
         color:rgb(138, 5, 190);
 	}
