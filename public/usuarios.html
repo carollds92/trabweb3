@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+</head>
+
+<body>
+    <h1 class="text-center title-1"> Lista de Usu&aacute;rios </h1>
+    <input id='busca' style="width: 100%; padding: 10px;" type="text" placeholder="Digite um e-mail para pesquisar">
+    <progress id="progress" value="20"></progress>
+    <ul id="lista">
+
+    </ul>
+    <script>
+        let fetchEmails = (email, callback) => {
+            var progressBar = document.getElementById("progress"),
+                xhr = new XMLHttpRequest();
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/users/emails", true);
+            xhr.onprogress = function (e) {
+                if (e.lengthComputable) {
+                    progressBar.max = e.total;
+                    progressBar.value = e.loaded;
+                }
+            };
+            xhr.onloadstart = function (e) {
+                progressBar.value = 0;
+            };
+            xhr.onloadend = function (e) {
+                progressBar.value = e.loaded;
+            };
+            xhr.setRequestHeader('content-type', 'application/json');
+            xhr.setRequestHeader('cache-control', 'no-cache');
+
+            xhr.send(JSON.stringify({ email }));
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    callback(JSON.parse(xhr.responseText));
+                }
+            };
+        }
+        window.onload = () => {
+            var inputBusca = document.getElementById('busca');
+            var lista = document.getElementById('lista');
+
+            let busca = (emailParaBuscar) => {
+                lista.innerHTML = '';
+                fetchEmails(emailParaBuscar, (emails) => {
+                    console.log(emails)
+                    emails.forEach((email) => {
+                        let liItem = document.createElement('li');
+                        liItem.innerHTML = email;
+                        lista.appendChild(liItem);
+                    })
+                })
+            }
+
+            busca('');
+
+            inputBusca.oninput = (e) => {
+                console.log(inputBusca.value)
+                busca(inputBusca.value);
+            }
+        }
+    </script>
+</body>
+
+</html>

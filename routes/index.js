@@ -1,58 +1,50 @@
 let express = require('express');
-    router = express.Router();
-
-
+router = express.Router();
+var db = require("../db");
+var Users = db.Mongoose.model('usuarios', db.UserSchema);
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'NuBank' });
+router.get('/', function (req, res, next) {
+    res.render('index', { title: 'NuBank' });
 });
 
-/*GET newusers page - rota para acessar a rota get para acessar a rota newuser quando acessamos a pagina no navegador*/
-router.get('../newuser', function(req, res){
-	res.render('newuser', {title: 'Add new user'})
-})
-
-/*GET userlist page */
-router.get('/userlist', function(req, res) {
-   var db = require("../db");
-   var Users = db.Mongoose.model('usercollection', db.UserSchema, 'usercollection');
-   Users.find({}).lean().exec(
-      function (e, docs) {
-         res.render('userlist', { "userlist": docs });
-   });
-});
-
-/*Post para add um novo usuario - esta ação esta no newusers.html*/
-router.post('/adduser', function (req, res) {
-
+/* GET userlist page */
+router.get('/userlist', function (req, res) {
     var db = require("../db");
-    var userName = req.body.username;
-    var newCpf= req.body.cpf;
-    var userEmail = req.body.useremail;
-
     var Users = db.Mongoose.model('usercollection', db.UserSchema, 'usercollection');
-    var user = new Users({ username: userName, cpf:newCpf, email: userEmail });
+    Users.find({}).lean().exec(
+        function (e, docs) {
+            res.render('userlist', { "userlist": docs });
+        });
+});
 
-    
+/*Post para add um novo usuario - esta aï¿½ï¿½o esta no newusers.html*/
+router.post('/adduser', function (req, res) {
+    var user = new Users(req.body);
+
     user.save(function (err) {
         if (err) {
             console.log("Error! " + err.message);
             return err;
         }
         else {
-            console.log("Post saved");
-            res.redirect("success.html");
+            console.log("Usuario cadastrado");
+            return res.redirect("success.html");
         }
     });
-    function Enviar(){
-    
-        if(req.body.username. value !=null){
-            alert('Obrigado Sr(a)'+req.body.username.value+'os seus dados foram submetidos');
-	    }
-    }
 
 });
+
+router.post('/login', (req, res) => {
+    console.log(req.body)
+    Users.find({ email: req.body.email, senha: req.body.senha }).lean().exec(
+        function (e, docs) {
+            console.log(docs);
+            if (docs.length == 0) { return res.send('Nao foi possivel logar') }
+            res.cookie('logado', req.body.email);
+            return res.redirect('./users')
+        });
+})
 
 /*GET da pagina de cadastro efetuado com sucesso*/
 /*router.get('/usuario', function(req, res, next){
