@@ -1,0 +1,42 @@
+body{
+	background-color:  #530082;
+	font-family: Graphik,'Gotham SSm A','Gotham SSm B','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    font-size: 18px; 
+    font-style: bold;
+    display: block; 
+    margin: 10%;
+	
+}
+
+p.tit{
+	font-size: 32px;
+    max-width: 26rem;
+    line-height: 1.25em;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.text{
+	color: white;
+}
+
+img.img{
+    left: 1em;
+    position: relative; 
+    width: 25%;
+}
+
+.nu{
+    display: inline; 
+}
+
+a.botao:link, a.botao:visited{
+    background-color: darkviolet; 
+    color: white; 
+    padding: 26px 30px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+}
+a.botao:hover, a.botao:active{
+   background-color: mediumorchid; 

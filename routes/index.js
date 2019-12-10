@@ -40,7 +40,8 @@ router.post('/login', (req, res) => {
     Users.find({ email: req.body.email, senha: req.body.senha }).lean().exec(
         function (e, docs) {
             console.log(docs);
-            if (docs.length == 0) { return res.send('Nao foi possivel logar') }
+           /* if (docs.length == 0) { return res.send('Nao foi possivel logar') }*/
+           if (docs.length == 0) { return res.redirect("erro.html") }
             res.cookie('logado', req.body.email);
             return res.redirect('./users')
         });

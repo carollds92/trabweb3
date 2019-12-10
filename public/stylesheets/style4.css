@@ -25,3 +25,18 @@ img.img{
     left: 10em;
     position: absolute; 
 }
+
+.nu{
+    display: inline; 
+}
+
+a.botao:link, a.botao:visited{
+    background-color: darkviolet; 
+    color: white; 
+    padding: 26px 30px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+}
+a.botao:hover, a.botao:active{
+   background-color: mediumorchid; 
